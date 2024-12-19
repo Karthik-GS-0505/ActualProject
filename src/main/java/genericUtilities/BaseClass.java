@@ -11,7 +11,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import objectRepository.InventoryPageAndMenu;
@@ -20,7 +20,7 @@ import objectRepository.LoginPage;
 public class BaseClass {
 	
 	public PropertyFileUtilities pUtil  = new PropertyFileUtilities();
-	public ExcelFileUtilities eUtil = new ExcelFileUtilities();
+	public ExcelFileUtilities eUtil = new ExcelFileUtilities(); //used in test method
 	public SeleniumUtilities sUtil = new SeleniumUtilities();
 	
 	public WebDriver driver;
@@ -35,16 +35,12 @@ public class BaseClass {
 	}
 	
 //For Cross-Browser Execution
-//	@Parameters("browser") 
-//	@BeforeTest 
-//	public void bcConfig(String PARAMETERVALUE) throws IOException 
-
+	@Parameters("browser") 
 	@BeforeClass(alwaysRun=true)
-	public void bcConfig() throws IOException 
+	public void bcConfig(@Optional("chrome") String PARAMETERVALUE) throws IOException //The @Optional("chrome") annotation ensures that if no value is provided for PARAMETERVALUE, the method will default to "chrome".
 	{
 		String URL = pUtil.readDataFromPropertyFile("url");
 		
-		/*For Cross-Browser Execution
 		if(PARAMETERVALUE.equalsIgnoreCase("chrome"))
 		{
 			driver = new ChromeDriver();
@@ -53,13 +49,7 @@ public class BaseClass {
 		{
 			driver = new FirefoxDriver();
 		}
-		else
-		{
-			driver = new ChromeDriver();
-		}
-		*/
 		
-		driver = new ChromeDriver();
 		sUtil.maximize(driver);
 		sUtil.addImplicitWait(driver);
 		

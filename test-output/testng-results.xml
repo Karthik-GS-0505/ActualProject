@@ -2,64 +2,78 @@
 <testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-18T16:12:42 IST" name="Suite" finished-at="2024-12-18T16:12:55 IST" duration-ms="13418">
+  <suite started-at="2024-12-19T17:33:29 IST" name="Suite" finished-at="2024-12-19T17:33:44 IST" duration-ms="15061">
     <groups>
       <group name="Regression">
-        <method signature="RemoveProductTest.tc_002_removeProductTest()[pri:0, instance:productsTests.RemoveProductTest@60099951]" name="tc_002_removeProductTest" class="productsTests.RemoveProductTest"/>
+        <method signature="RemoveProductTest.tc_002_removeProductTest()[pri:0, instance:productsTests.RemoveProductTest@1a6d8329]" name="tc_002_removeProductTest" class="productsTests.RemoveProductTest"/>
       </group> <!-- Regression -->
       <group name="smoke">
-        <method signature="AddProductToCartTest.tc_001_AddProductToCartTest()[pri:0, instance:productsTests.AddProductToCartTest@41a0aa7d]" name="tc_001_AddProductToCartTest" class="productsTests.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.tc_001_AddProductToCartTest()[pri:0, instance:productsTests.AddProductToCartTest@13e344d]" name="tc_001_AddProductToCartTest" class="productsTests.AddProductToCartTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-12-18T16:12:42 IST" name="Test" finished-at="2024-12-18T16:12:55 IST" duration-ms="13418">
+    <test started-at="2024-12-19T17:33:29 IST" name="Test" finished-at="2024-12-19T17:33:44 IST" duration-ms="15061">
       <class name="productsTests.AddProductToCartTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:productsTests.AddProductToCartTest@41a0aa7d]" started-at="2024-12-18T16:12:42 IST" name="bsConfig" finished-at="2024-12-18T16:12:42 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:productsTests.AddProductToCartTest@13e344d]" started-at="2024-12-19T17:33:29 IST" name="bsConfig" finished-at="2024-12-19T17:33:29 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:productsTests.AddProductToCartTest@41a0aa7d]" started-at="2024-12-18T16:12:42 IST" name="bcConfig" finished-at="2024-12-18T16:12:45 IST" duration-ms="2745" status="PASS">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:productsTests.AddProductToCartTest@13e344d]" started-at="2024-12-19T17:33:29 IST" name="bcConfig" finished-at="2024-12-19T17:33:33 IST" duration-ms="3902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:productsTests.AddProductToCartTest@41a0aa7d]" started-at="2024-12-18T16:12:45 IST" name="bmConfig" finished-at="2024-12-18T16:12:45 IST" duration-ms="403" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:productsTests.AddProductToCartTest@13e344d]" started-at="2024-12-19T17:33:33 IST" name="bmConfig" finished-at="2024-12-19T17:33:33 IST" duration-ms="424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="tc_001_AddProductToCartTest()[pri:0, instance:productsTests.AddProductToCartTest@41a0aa7d]" started-at="2024-12-18T16:12:45 IST" name="tc_001_AddProductToCartTest" finished-at="2024-12-18T16:12:52 IST" duration-ms="7009" status="PASS">
+        <test-method signature="tc_001_AddProductToCartTest()[pri:0, instance:productsTests.AddProductToCartTest@13e344d]" started-at="2024-12-19T17:33:33 IST" name="tc_001_AddProductToCartTest" finished-at="2024-12-19T17:33:40 IST" duration-ms="7118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_001_AddProductToCartTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:productsTests.AddProductToCartTest@41a0aa7d]" started-at="2024-12-18T16:12:52 IST" name="amConfig" finished-at="2024-12-18T16:12:53 IST" duration-ms="237" status="PASS">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:productsTests.AddProductToCartTest@13e344d]" started-at="2024-12-19T17:33:40 IST" name="amConfig" finished-at="2024-12-19T17:33:41 IST" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:productsTests.AddProductToCartTest@41a0aa7d]" started-at="2024-12-18T16:12:53 IST" name="acConfig" finished-at="2024-12-18T16:12:53 IST" duration-ms="268" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:productsTests.AddProductToCartTest@13e344d]" started-at="2024-12-19T17:33:41 IST" name="acConfig" finished-at="2024-12-19T17:33:41 IST" duration-ms="256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:productsTests.AddProductToCartTest@41a0aa7d]" started-at="2024-12-18T16:12:56 IST" name="asConfig" finished-at="2024-12-18T16:12:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:productsTests.AddProductToCartTest@13e344d]" started-at="2024-12-19T17:33:44 IST" name="asConfig" finished-at="2024-12-19T17:33:44 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
       </class> <!-- productsTests.AddProductToCartTest -->
       <class name="productsTests.RemoveProductTest">
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:productsTests.RemoveProductTest@60099951]" started-at="2024-12-18T16:12:53 IST" name="bcConfig" finished-at="2024-12-18T16:12:55 IST" duration-ms="1713" status="PASS">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:productsTests.RemoveProductTest@1a6d8329]" started-at="2024-12-19T17:33:41 IST" name="bcConfig" finished-at="2024-12-19T17:33:43 IST" duration-ms="1875" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:productsTests.RemoveProductTest@60099951]" started-at="2024-12-18T16:12:55 IST" name="bmConfig" finished-at="2024-12-18T16:12:55 IST" duration-ms="342" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:productsTests.RemoveProductTest@1a6d8329]" started-at="2024-12-19T17:33:43 IST" name="bmConfig" finished-at="2024-12-19T17:33:43 IST" duration-ms="428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="tc_002_removeProductTest()[pri:0, instance:productsTests.RemoveProductTest@60099951]" started-at="2024-12-18T16:12:55 IST" name="tc_002_removeProductTest" finished-at="2024-12-18T16:12:55 IST" duration-ms="2" status="PASS">
+        <test-method signature="tc_002_removeProductTest()[pri:0, instance:productsTests.RemoveProductTest@1a6d8329]" started-at="2024-12-19T17:33:43 IST" name="tc_002_removeProductTest" finished-at="2024-12-19T17:33:43 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_002_removeProductTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:productsTests.RemoveProductTest@60099951]" started-at="2024-12-18T16:12:55 IST" name="amConfig" finished-at="2024-12-18T16:12:55 IST" duration-ms="254" status="PASS">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:productsTests.RemoveProductTest@1a6d8329]" started-at="2024-12-19T17:33:43 IST" name="amConfig" finished-at="2024-12-19T17:33:43 IST" duration-ms="298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:productsTests.RemoveProductTest@60099951]" started-at="2024-12-18T16:12:55 IST" name="acConfig" finished-at="2024-12-18T16:12:55 IST" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:productsTests.RemoveProductTest@1a6d8329]" started-at="2024-12-19T17:33:43 IST" name="acConfig" finished-at="2024-12-19T17:33:44 IST" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
