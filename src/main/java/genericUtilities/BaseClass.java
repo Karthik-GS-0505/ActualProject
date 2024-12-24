@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -41,9 +42,14 @@ public class BaseClass {
 	{
 		String URL = pUtil.readDataFromPropertyFile("url");
 		
-		if(PARAMETERVALUE.equalsIgnoreCase("chrome"))
+		if(PARAMETERVALUE.contains("chrome"))
 		{
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			if(PARAMETERVALUE.contains("headless"))
+			{
+				options.addArguments("headless");
+			}
+			driver = new ChromeDriver(options);
 		}
 		else if(PARAMETERVALUE.equalsIgnoreCase("firefox"))
 		{
